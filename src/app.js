@@ -5,6 +5,7 @@ import mongoose from 'mongoose'
 import __dirname from './utils.js'
 import indexRouter from './routes/index.router.js'
 import aboutMe from './routes/aboutme.router.js'
+import av from './routes/av.router.js'
 
 const app = express()
 
@@ -19,6 +20,7 @@ app.set('view engine', 'handlebars')
 
 app.use('/', indexRouter)
 app.use('/aboutme', aboutMe)
+app.use('/av', av)
 
 
 app.listen(8080, () => console.log('listening...'))

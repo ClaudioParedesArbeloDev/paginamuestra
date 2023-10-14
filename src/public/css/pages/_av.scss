@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import "./colors";
+
+.bodyAv{
+   background-color: $focused-color;
+   font-family: 'Poppins', sans-serif;
+}
+
+.mainAv{
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
