@@ -24,3 +24,17 @@ app.use('/av', av)
 
 
 app.listen(8080, () => console.log('listening...'))
+
+const picDb = "mongodb+srv://claudioparedes:Cabeza2$@cluster1.rimje8x.mongodb.net/?retryWrites=true&w=majority"
+console.log('Connecting...')
+mongoose.connect(picDb, {
+    dbname: 'pictures'
+})
+.then(() => {
+    console.log("DB connected!!!")
+    runServer()
+})
+
+.catch(e => {
+    console.log("Can't connect to DB")
+})
