@@ -366,7 +366,7 @@
 }
 
 .footerAbout {
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }
@@ -396,9 +396,34 @@
   font-family: "Poppins", sans-serif;
 }
 
-.mainAv {
-  color: #fff;
+.titleAv {
   display: flex;
   justify-content: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.mainAv {
   padding-top: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  width: 230px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: 2px solid #fff;
+  outline-offset: -8px;
+}
+
+.grid-item:hover {
+  filter: opacity(0.2);
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */

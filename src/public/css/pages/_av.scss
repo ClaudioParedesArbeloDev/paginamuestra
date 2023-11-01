@@ -6,12 +6,33 @@
    background-color: $focused-color;
    font-family: 'Poppins', sans-serif;
 }
-
-.mainAv{
-    color: $text-color;
+.titleAv{
     display: flex;
     justify-content: center;
+    color: $text-color;
+    margin-top: 20px;
+}
+.mainAv{
+    
     padding-top: 30px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;
+    justify-content: center;
     
 }
 
+.grid-item{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    outline: 2px solid $text-color;
+    outline-offset: -8px;
+}
+.grid-item:hover{
+    filter: opacity(0.2);
+    transform: scale(1.2);
+}

@@ -30,9 +30,19 @@
     <li><a href="" class="action_btn">Log In</a> </li>
   </div>
 </header >
+<h1 class="titleAv">AudioVisual Productions</h1>
 <main class="mainAv">
-    <h1>AudioVisual Productions</h1>
-    
+    <div class="grid-container">
+      {{#each docs}}
+        <img src="{{this.picture}}" alt="" class="grid-item">
+        
+      {{/each}}
+    </div>
+    <div class="buttonPag">
+      <button>Pag. Anterior</button>
+      <button></button>
+      <button>Pag. Posterior</button>
+    </div>
 </main>
 <footer class="footerAbout"> 
   <div class="footerAbout__wrapper">
@@ -47,3 +57,5 @@
   </div>
 </footer> 
 <script src="/js/index.js"></script>
+<script src="/js/galeria.js"></script>
+
