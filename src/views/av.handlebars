@@ -34,19 +34,20 @@
 <main class="mainAv">
     <div class="grid-container">
       {{#each docs}}
-        <img src="{{this.picture}}" alt="" class="grid-item">
-        
+        <img src="{{this.picture}}" alt="{{this.location}}" contextmenu="{{this.description}}" class="grid-item" >
+                
       {{/each}}
-      <div>
-        <img src="" alt="" class="img-show">
-        <i class="fa-solid fa-x"></i> 
-      </div>
+      <div class="lightbox" style="display: none;">
+        <span class="close-button">&times;</span>
+        <span class="arrowLeft"><i class="fa-solid fa-chevron-left"></i></span>
+        <img class="lightbox-image" src="" alt="">
+        <p class="description"></p>
+        <p class="location"></p>
+        <span class="arrowRight"><i class="fa-solid fa-chevron-right"></i></span>
+       
+      
     </div>
-    <div class="buttonPag">
-      <button>Pag. Anterior</button>
-      <button></button>
-      <button>Pag. Posterior</button>
-    </div>
+    
 </main>
 <footer class="footerAbout"> 
   <div class="footerAbout__wrapper">
