@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeButton = document.querySelector('.close-button');
   const buttonRight = document.querySelector('.arrowRight')
   const buttonLeft = document.querySelector('.arrowLeft')
-  const gridItems = document.querySelectorAll('.grid-item');
+  const gridItems = document.querySelectorAll('.grid-pic');
   const description = document.querySelector('.description');
   const location = document.querySelector('.location');
 

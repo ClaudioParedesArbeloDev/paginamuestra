@@ -32,9 +32,15 @@
 </header >
 <h1 class="titleAv">AudioVisual Productions</h1>
 <main class="mainAv">
+      <form action="" class="searchBar">
+            <input id="GET-name" placeholder="  Search Location" name="name" />
+            <a href="">Search</a>
+      </form>
+
+ 
     <div class="grid-container">
       {{#each docs}}
-        <img src="{{this.picture}}" alt="{{this.location}}" contextmenu="{{this.description}}" class="grid-item" >
+        <img src="{{this.picture}}" alt="{{this.location}}" contextmenu="{{this.description}}" class="grid-pic" >
                 
       {{/each}}
       <div class="lightbox" style="display: none;">
@@ -44,10 +50,17 @@
         <p class="description"></p>
         <p class="location"></p>
         <span class="arrowRight"><i class="fa-solid fa-chevron-right"></i></span>
-       
-      
+     </div>
     </div>
-    
+    <div class="paginate">
+    {{#if hasPrevPage}}
+      <a href="{{prevLink}}"><i class="fa-solid fa-circle-arrow-left"></i></a>
+    {{/if}}
+    {{#if hasNextPage}}
+      <a href="{{nextLink}}"><i class="fa-solid fa-circle-arrow-right"></i></a>
+      <p></p>
+    {{/if}}
+  </div>
 </main>
 <footer class="footerAbout"> 
   <div class="footerAbout__wrapper">
