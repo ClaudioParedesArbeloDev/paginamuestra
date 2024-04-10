@@ -23,7 +23,7 @@ app.use('/aboutme', aboutMe)
 app.use('/av', av)
 
 
-const URL = "mongodb+srv://claudioparedes:Cabeza2$@cluster1.rimje8x.mongodb.net/?retryWrites=true&w=majority"
+
 
 mongoose.connect(URL, {
     dbName: 'pictures'
